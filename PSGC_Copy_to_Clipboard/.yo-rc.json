@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.4",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "copy-to-clipboard",
+    "libraryId": "337f4882-dedd-4ea6-bfb4-70cce830c33e",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "copy-to-clipboard",
+    "solutionShortDescription": "copy-to-clipboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}

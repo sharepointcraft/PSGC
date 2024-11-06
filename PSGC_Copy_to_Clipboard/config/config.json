@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "copy-to-clipboard-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/copyToClipboard/CopyToClipboardCommandSet.js",
+          "manifest": "./src/extensions/copyToClipboard/CopyToClipboardCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CopyToClipboardCommandSetStrings": "lib/extensions/copyToClipboard/loc/{locale}.js"
+  }
+}
