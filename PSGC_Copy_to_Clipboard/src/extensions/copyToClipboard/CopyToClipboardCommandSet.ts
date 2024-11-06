@@ -68,13 +68,13 @@ export default class CceCommandSet extends BaseListViewCommandSet<ICceCommandSet
       if (selectedRows && selectedRows.length === 1) {
         const selectedRow = selectedRows[0];
 
-        // Get FSObjType to check if item is a file or folder
-        const fileSystemObjectType = selectedRow.getValueByName('FSObjType'); // 0 = File, 1 = Folder
+        // Check if the item has a file extension (indicating it's a file)
+        const fileName = selectedRow.getValueByName('FileLeafRef'); // 'FileLeafRef' holds the file name or folder name
 
-        console.log('File System Object Type:', fileSystemObjectType); // Debug log
+        console.log('Selected Item Name:', fileName); // Debug log
 
-        // Only show command if the item is a file (FSObjType === 0)
-        compareOneCommand.visible = fileSystemObjectType === 0;
+        // Command visible only if fileName contains a dot (indicating a file extension)
+        compareOneCommand.visible = fileName && fileName.includes('.');
       } else {
         compareOneCommand.visible = false;
       }
