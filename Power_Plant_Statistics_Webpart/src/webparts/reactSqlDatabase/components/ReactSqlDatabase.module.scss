@@ -1,0 +1,142 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+/* Container Styling */
+// .container {
+//   width: 100%;
+//   max-width: 800px;
+//   margin: 20px auto;
+//   padding: 10px;
+//   background: #fff;
+//   border-radius: 8px;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// /* Title Styling */
+// .tableTitle {
+//   text-align: center;
+//   font-size: 20px;
+//   color: #0078d4;
+//   margin-bottom: 10px;
+// }
+
+// /* Table Styling */
+// .productTable {
+//   width: 100%;
+//   border-collapse: collapse;
+//   font-family: Arial, sans-serif;
+//   background-color: #ffffff;
+// }
+
+// /* Table Header */
+// .productTable thead {
+//   background-color: #0078d4;
+//   color: white;
+//   text-align: left;
+// }
+
+// .productTable thead th {
+//   padding: 12px;
+//   font-size: 16px;
+// }
+
+// /* Table Rows */
+// .productTable tbody tr {
+//   border-bottom: 1px solid #ddd;
+//   transition: background-color 0.3s;
+// }
+
+// .productTable tbody tr:hover {
+//   background-color: #f4f4f4;
+// }
+
+// /* Table Data Cells */
+// .productTable tbody td {
+//   padding: 12px;
+//   font-size: 14px;
+// }
+
+// /* Price Column Styling */
+// .productTable tbody td:nth-child(3) {
+//   color: #28a745;
+//   font-weight: bold;
+// }
+
+// /* Quantity Column Styling */
+// .productTable tbody td:nth-child(4) {
+//   color: #dc3545;
+//   font-weight: bold;
+// }
+
+// /* Responsive Design */
+// @media (max-width: 768px) {
+//   .productTable {
+//     font-size: 14px;
+//   }
+//   .productTable thead th, 
+//   .productTable tbody td {
+//     padding: 8px;
+//   }
+// }
+.container {
+  background: #f9b74c;
+  padding: 10px;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.tableTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3b2800;
+}
+
+.productTable {
+  width: 100%;
+  background: #fff;
+  border-collapse: collapse;
+}
+
+.productTable th, .productTable td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+
+.tableWrapper {
+  overflow-x: auto; /* Enables horizontal scroll */
+  max-width: 100%; /* Adjust as needed */
+}
+
+.productTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.productTable th,
+.productTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.fixedColumn {
+  position: sticky;
+  left: 0;
+  background: white; /* Ensure it stands out */
+  font-weight: bold;
+  z-index: 2;
+}
+
+.scrollableColumn {
+  min-width: 120px; /* Ensures enough space for scrolling */
+}
